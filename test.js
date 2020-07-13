@@ -31,9 +31,8 @@ rl.question("Enter a string\n", function (str) {
   console.log(
     Object.values(obj)
       .sort((a, b) => {
-        return b.length - a.length;
+        return a.length - b.length;
       })
-      .reverse()
       .flat()
       .join("")
   );
